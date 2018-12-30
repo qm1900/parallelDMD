@@ -1,8 +1,8 @@
 #### Parallel DMD  
 
-This is a parallel implementation for the classic dynamic mode decomposition.
+This is a parallel implementation for the classic SVD-based dynamic mode decomposition, where the Cholesky decomposition is used to compute the SVD matrices.
 
-The DMD modes are computed via SVD method, and the Cholesky decomposition is used to compute the SVD matrices.
+Output results are only with respect to the un-tweaked amplitudes, eigenvalues, and spatial modes, and no selection criterion is specified within the code since the selection criterion can be different and flexible.
 
 #### Dependency
 * Eigen3
@@ -10,7 +10,7 @@ The DMD modes are computed via SVD method, and the Cholesky decomposition is use
 
 #### Compiling
 
-* `make`: compiling source code computing a general input matrix
+* `make`: compiling source code to ./bin/dmd_mpi.out
 * `make clean`: remove compiled binaries
 
 #### Usage
